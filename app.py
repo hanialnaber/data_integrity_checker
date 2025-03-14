@@ -64,7 +64,7 @@ def main():
                 st.session_state.data2 = data2
 
                 # Force a rerun to display the results
-                st.rerun()
+                st.experimental_rerun()
             except Exception as e:
                 st.error(f"Error comparing files: {str(e)}")
 
